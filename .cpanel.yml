@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/samlbdzy/public_html/
-    - / index.html $DEPLOYPATH
-    - /css style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/samlbdzy/public_html
+    - rsync -av ./ $DEPLOYPATH/
