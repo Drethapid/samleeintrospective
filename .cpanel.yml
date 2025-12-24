@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/your_username/public_html/
+    - export DEPLOYPATH=/home/samlbdzy/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css/* $DEPLOYPATH/style
     - /bin/cp -R assets/* $DEPLOYPATH/assets/
