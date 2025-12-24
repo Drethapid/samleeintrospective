@@ -3,8 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/samlbdzy/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R css/* $DEPLOYPATH/style
-    - /bin/cp -R assets/* $DEPLOYPATH/assets/
+    - /bin/cp -R css/* $DEPLOYPATH/css
     - /bin/cp -R assets/* $DEPLOYPATH/assets/
     - /bin/cp -R images/* $DEPLOYPATH/images/
     - /bin/cp -R js/* $DEPLOYPATH/js/
