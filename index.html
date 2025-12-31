@@ -3,70 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Personal Blog</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <!-- Logo -->
-      <!-- Nav menu -->
+      <h1>Welcome to My Blog</h1>
       <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
       </nav>
-
-      <!-- Search box -->
-      <form role="search">
-        <input type="search" placeholder="Search posts..." />
-        <button type="submit">Search</button>
-      </form>
     </header>
 
-    <!-- Featured -->
-    <section class="featured">
-      <h2>Featured Articles</h2>
-
-      <article>
-        <!-- Post preview -->
-      </article>
-
-      <article>
-        <!-- Post preview -->
-      </article>
-
-      <!-- Latest Posts -->
-      <section class="latest">
-        <!-- Code -->
+    <main>
+      <section>
+        <h2>Recent Posts</h2>
+        <ul>
+          <li>
+            <a href="posts/post1.html"
+              >Post 1: Introduction to Web Development</a
+            >
+          </li>
+          <li><a href="posts/post2.html">Post 2: CSS Basics</a></li>
+          <li>
+            <a href="posts/post3.html">Post 3: JavaScript Fundamentals</a>
+          </li>
+        </ul>
       </section>
+    </main>
 
-      <!-- Popular Tags -->
-      <section class="popular-tags">
-        <!-- Code -->
-      </section>
-
-      <!-- Newsletter -->
-      <section class="newsletter">
-        <!-- Code -->
-      </section>
-    </section>
-
-    <article class="post">
-      <img src="cover.jpg" alt="" />
-
-      <p class="meta">
-        By <a href="#author">Kevin Powell</a>
-        on January 23, 2023
-      </p>
-
-      <!-- Post content -->
-      <div class="entry">
-        <!-- Article-->
-      </div>
-    </article>
+    <footer>
+      <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
