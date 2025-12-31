@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/samlbdzy/public_html/
-    - /usr/bin/rsync -av --delete \
+    - /bin/rsync -av --delete \
       --no-perms --no-owner --no-group \
       --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
       --exclude='.git/' \
