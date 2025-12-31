@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/samlbdzy/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css/* $DEPLOYPATH/css
-    - /bin/cp -R assets/* $DEPLOYPATH/assets/
-    - /bin/cp -R images/* $DEPLOYPATH/images/
+    - /bin/cp -R posts/* $DEPLOYPATH/posts/
+    -  #/bin/cp -R images/* $DEPLOYPATH/images/
     - /bin/cp -R js/* $DEPLOYPATH/js/
