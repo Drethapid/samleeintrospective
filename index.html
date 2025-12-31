@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Personal Blog</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Personal Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#index">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#posts">Blog Posts</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <!-- Logo -->
+      <!-- Nav menu -->
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search box -->
+      <form role="search">
+        <input type="search" placeholder="Search posts..." />
+        <button type="submit">Search</button>
+      </form>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Introduction</h2>
-            <p>This is a place where I share my thoughts and experiences. Stay tuned for more updates!</p>
-        </section>
+    <!-- Featured -->
+    <section class="featured">
+      <h2>Featured Articles</h2>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate writer and developer who enjoys sharing knowledge on various topics.</p>
-        </section>
+      <article>
+        <!-- Post preview -->
+      </article>
 
-        <section id="posts">
-            <h2>Latest Blog Posts</h2>
-            <article>
-                <h3>My First Blog Post</h3>
-                <p>Welcome to my first blog post! Here, I’ll be discussing web development basics and more.</p>
-                <a href="blog-post1.html">Read More</a>
-            </article>
-            <article>
-                <h3>Exploring HTML Elements</h3>
-                <p>In this post, we will delve deeper into HTML elements such as block-level and inline elements.</p>
-                <a href="blog-post2.html">Read More</a>
-            </article>
-        </section>
+      <article>
+        <!-- Post preview -->
+      </article>
 
-        <aside>
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#posts">Blog Posts</a></li>
-            </ul>
-        </aside>
-    </main>
+      <!-- Latest Posts -->
+      <section class="latest">
+        <!-- Code -->
+      </section>
 
-    <footer>
-        <p>&copy; 2025 My Personal Blog | Contact: myemail@example.com</p>
-    </footer>
-</body>
+      <!-- Popular Tags -->
+      <section class="popular-tags">
+        <!-- Code -->
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <!-- Code -->
+      </section>
+    </section>
+
+    <article class="post">
+      <img src="cover.jpg" alt="" />
+
+      <p class="meta">
+        By <a href="#author">Kevin Powell</a>
+        on January 23, 2023
+      </p>
+
+      <!-- Post content -->
+      <div class="entry">
+        <!-- Article-->
+      </div>
+    </article>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

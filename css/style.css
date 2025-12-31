@@ -1,68 +1,93 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
+header {
+  background: #f8f8f8;
   padding: 20px;
-  background: #f1f1f1;
 }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
+header h1 {
+  font-family: ‘Poppins‘, sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #666;
+  transition: 0.3s ease;
+}
+
+header nav a:hover {
+  color: #0076ff;
+}
+
+.featured {
+  background: #f0f0f0;
+  padding: 60px 20px;
   text-align: center;
+}
+
+.featured h2 {
+  font-size: 36px;
+}
+
+.featured article {
   background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
   padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+
+  /* Layout */
+  display: inline-block;
+  width: 30%;
 }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+@media (max-width: 768px) {
+  /* Stack articles on small screens  */
+  .featured article {
+    width: 90%;
   }
+}
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.post h1 {
+  font-size: 48px;
+}
+
+.post img {
+  width: 100%;
+  max-width: 720px;
+}
+
+.meta {
+  font-style: italic;
+  color: gray;
+}
+
+.entry {
+  line-height: 1.5;
+}
+
+.entry a {
+  color: #0076ff;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+
+@media (max-width: 500px) {
+  /* Responsive adjustments */
 }
